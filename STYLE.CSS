@@ -194,11 +194,14 @@ header{
     font-weight: 400;
     color: white;
     text-align: center;
+    cursor: pointer;
+    
     
 }
 .buttons div:hover a:hover{
     color: #e68a00;
     
+
 }
 /* Banners */
 .banner-box{
@@ -269,14 +272,13 @@ header{
 }
 .banner-btn a{
     padding: 9px 19px;
-    
+
 }
 .banner-btn:hover{
     width: 115px;
     height: 30px;
     background-color: #ffa319;
     color: white;
-    
 }
 /* tabs */
 .tabs li{   
@@ -436,7 +438,6 @@ cursor: pointer;
     height: 444px;
     margin: 0 0 30px;
     transition: all .75s ease;
-    overflow: hidden;
 }
 .poster-img{
     width: 350px;
@@ -444,7 +445,7 @@ cursor: pointer;
     position: absolute;
     z-index: 1;
     padding: 0 15px;
-    overflow: hidden;
+    
     
 }
 .poster-name{
@@ -459,9 +460,9 @@ cursor: pointer;
     color: #e68a00;
     
 }
-.poster:hover, .poster-img:hover{
-    color: rgb(13, 87, 50);
-    transform : scale(1.1)
+.poster:hover,.poster-name:hover{
+    color: yellow;
+    transform: scale(1.1);
 }
 /* blogs */
 .blog{
@@ -498,21 +499,16 @@ cursor: pointer;
    color: #e68a00;
    display: block;
 }
-
-.banner-btn span{
+.cloux-team .banner-btn a span{
     color: white;
-    margin: 8px 0 8px 0;
+}
+.cloux-team .summary{
+    margin-bottom: 10px;
 }
 .cloux-content{
     width: 650px;
     height: 360px;
     margin: 0 50px;
-}
-.cloux-content .banner-btn{
-    margin: 8px 0 8px 0;
-}
-.cloux-content .summary{
-    margin-bottom: 8px;
 }
 .product{
     padding: 0 15px;
@@ -618,10 +614,9 @@ height: 100px;
     height: 69px;
     font-family: Arial, sans-serif;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     transition: all .75s ease;
-    padding: 0 5px 0 5px;
 }
 .store-button:hover{
     background-color: #ffa319;
