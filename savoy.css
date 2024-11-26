@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.justify-content-SB{
+    justify-content: space-between;
+}
+.justify-content-SA{
+    justify-content: space-around;
+}
+.align-items-C{
+    align-items: center;
+}
+.justify-content-C{
+    justify-content: center;
+}
+body{
+    font-family: 'MaisonNeue', sans-serif;
+    cursor: pointer;
+    
+}
+.justify-content-SE{
+    justify-content: space-evenly;
+}
+.justify-content-end{
+    justify-content: end;
+}
+/* header */
+header{
+    padding: 20px 0 25px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+nav .logo{
+    width: 112px;
+    height: 16px;
+    margin: 0 20px;
+    
+    
+}
+nav .main-menu{
+    list-style: none;
+    width: 607px;
+    height: 50px;
+
+}
+nav ul li a{
+    padding: 16px 12px;
+    color: #686868;
+    display: inline-block;
+    font-size: 16px;
+}
+nav .second-menu{
+    width: 607px;
+    height: 50px;
+    list-style: none;
+}
+nav ul li a sup{
+    font-size: 9px;
+}
+nav ul li a i:hover{
+color: red;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* slider */
+.slider{
+    background-image: url(https://savoy.nordicmade.com/wp-content/uploads/2015/08/slider-pendant-lighting.jpg);
+    width: 1600px;
+    height: 678px;
+  background-position: top;
+  display: inline-block;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 30px;
+}
+.slider-content{
+  position: relative;
+  width: 500px;
+  height: 243px;
+  top: 20%;
+  left: 10%;
+    padding: 61px;
+}
+.slider-title{
+    font-size: 28px;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.slider button{
+    width: 66px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #AAAA;
+}
+.slider button a{
+    font-size: 20px;
+    color: #AAAA; 
+    margin: 16px 0 6px;
+    padding: 0 0 3px;  
+}
+.slider button a:hover{
+    color: #ffa319;
+}
+/* shop-menu */
+.shop-menu{
+margin: 56px 0;
+width: 976px;
+height: 44px;
+}
+.shop-menu a{
+font-size: 18px;
+color: #777;
+margin: 0 10px;
+
+
+}
+.shop-menu a span{
+    font-size: 18px;
+    color: #777;
+    margin: 0 10px;
+}
+/* filter-menu */
+.filter-menu{
+    margin: 56px 0;
+    width: 244px;
+    height: 29px;
+}
+.filter-menu a{
+font-size: 18px;
+color: #777;
+margin: 0 10px;
+}
+.filter-menu a span{
+    font-size: 18px;
+    color: #777;
+    margin: 0 10px;
+}
+.filter-menu i{
+    font-size: 18px;
+    color: #777;
+    margin: 0 10px;
+}
+.filter-menu a:hover,.shop-menu a:hover,
+.filter-menu i:hover{
+    color: #ffa319;
+} 
+   /* products  */
+   .product-section{
+    margin: 0 311px;
+    padding: 0 15px;
+    z-index: -1;
+   }
+.product-box{
+    width: 311px;
+    height: 460px;
+    position: relative;
+    padding: 0 12px 24px;
+}
+.product-img{
+    width: 287px;
+    height: 356px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.product-name,.product-price{
+color: #777;
+z-index: 1;
+margin: 5px;
+transition: all .75s ease;
+
+}
+.icon{
+    position: absolute;
+    right: 0;
+    top:80%;
+    padding-right: 30px;
+}
+.product-price:hover::before{
+    overflow: hidden;
+    content: 'SHOW MORE ';
+    position: absolute;
+    background-color: white;
+    color: #777;
+    z-index: 9;
+    transition: all;
+}
+
+.more{
+    width: 100%;
+    height: 64px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 64px;
+    color: #282828;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+.more:hover{
+    color: #6868;
+}
+/* footer */
+footer{
+    background-color: #282828;
+    width: 100%;
+    height: 91px;
+    padding: 30px 0 31px;
+}
+footer .main-menu{
+    width: 833px;
+    height: 30px;
+    padding: 0 15px;
+}
+footer .main-menu:hover{
+    color: white;
+}
+footer .second-menu{
+    width: 416px;
+    height: 30px;
+    padding: 0 15px;
+}
+footer .second-menu i{
+    color: white;
+}
+footer .second-menu i:hover{
+    color: #777;
+}
